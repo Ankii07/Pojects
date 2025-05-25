@@ -1,0 +1,234 @@
+body{
+    margin: 0px;
+    font-family: salsa;
+}
+
+.jhalar{
+    height: 240px;
+    margin-bottom: -150px;
+}
+
+.hero-section{
+    /* height dena shi trika nhi hota jitna element mai content hota hai utna element ki height automatically ho jati hai.. */
+    /* min-height: 100vh; */
+    background-image: url(./images/orange-background.png);
+    /* for background images properties */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+/* hero section ke andr jo p tage hai usko style dena hai */
+.hero-section p{
+   font-size: 46px;
+   font-weight: 400;
+   font-family: salsa,cursive;
+   max-width: 550px;
+   /* margin-left: 15rem; */
+}
+
+/* agr parent pe style krenge to wh automatically children pe ho jayega to hume ek ek krke children pe nhi krna hoga. */
+.audio-paragraph{
+    margin-left: 15rem;
+}
+/* aise kaam nhi krta hai direct style audio tag pe google pe search krke dekh kr sikh lo aur aise hi krna hota hai */
+/* audio{
+    background-color: aliceblue;
+} */
+
+audio::-webkit-media-controls-panel{
+    background-color: #FBD8A4;
+}
+
+.audio-container{
+    background-color: #FBD8A4;
+    max-width: 500px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* yh krne se hum yh bol rhe hai ki element mai jitna content ho utna hi width rakho jisse ki yh responsive bn jaye.. */
+    max-width: max-content;
+}
+
+.lakshmi-ganesha-section{
+    background-color: #FB8A00;
+    /* formatting context */
+    display: flow-root;
+}
+
+.horizontal-divider{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* display: block; */
+    max-width: 800px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+}
+
+.horizontal-line{
+    width: 400px;
+    background-color: #ffffffe2;
+    height: 3px;
+    border-radius: 5px;
+    /* margin-inline: auto; */
+}
+
+.circle{
+    width: 7px;
+    height: 7px;
+    background-color: #ffffffe2;
+    border-radius: 50%;
+    /* shrink hone pe size change nhi krega.. */
+    flex-shrink: 0;
+}
+
+.lakshmi_ganesha_img{
+    max-width: 90vw;
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+}
+
+.lakshmi-ganesha-section h2{
+    font-family: 'style script';
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.white-card-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.little-girl{
+    max-width: 270px;
+    margin-left: -6rem ;
+}
+
+/* max-width dete hai to cheeze automatically adapt hota hai */
+.white-card{
+    max-width: 565px;
+    background-color: white;
+    padding: 4rem;
+    border-radius: 32px;
+    
+}
+
+.white-card p{
+    font-size: 2rem;
+
+}
+
+.lakshmi-ganesha-card{
+    background-color: white;
+    max-width: 90vw;
+    width: 100%;
+    padding-block: 4rem;
+    border-radius: 10px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lakshmi_ji{
+    max-width: 50%;
+}
+
+.ganesh_ji{
+    max-width: 50%;
+}
+
+.thank-you-text{
+    max-width: 90vw;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.thank-you-text h2{
+    text-align: left;
+}
+
+.my-name{
+    text-align: right;
+    font-size: 14px;
+}
+
+
+@media (max-width:840px){
+    /* image by default inline element hoti hai to phle element ko
+    block bnayega kyuki margin-left auto denge kyuki block element pe hi margin auto kaam krta hai
+    margin auto krti yh hai ki jitni bhi space right mai hai wh left mai daal denge jisse ki element left shift ho jayega..  */
+    .first-deepak{
+        display: block;
+        margin-left: auto;
+    }
+
+    /* multiple classes ko same hi style dena tha to comma use krke de diya.. */
+    .second-deepak,
+    .soulful-music,
+    .playing-icon{
+        display: none;
+    }
+
+    .audio-paragraph{
+        margin-left: 1rem;
+    }
+
+    .jhalar{
+        margin-bottom: 0px;
+    }
+
+    .hero-section p{
+        font-size: 32px;
+    }
+
+    .white-card{
+        margin-left: 20px;
+    }
+
+    .white-card p {
+        font-size: 1rem;
+    }
+   
+}
+
+@media (max-width: 540px) {
+    .hero-section p{
+        font-size: 28px;
+    }
+
+    .first-deepak{
+        /* % mai dene se parent ki width jitni hogi utni jayegi jisse ki responsive ho gyi aur overflow nhi hogi.. */
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .lakshmi-ganesha-section h2{
+        font-size: 32px;
+    }
+
+    .white-card p {
+        font-size: 1rem;
+    }
+
+    .white-card{
+        /* block matlb top or bottom */
+        padding-block: 1rem;
+        padding-left: 2rem;
+    }
+
+    .little-girl{
+        max-width: 160px;
+        margin-left: -6rem ;
+    }
+
+}
+
+
+

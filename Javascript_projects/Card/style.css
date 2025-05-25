@@ -1,0 +1,72 @@
+.card{
+    border: 2px solid red;
+    width: 600px;
+    height: 300px; 
+}
+
+.card_image_part{
+    display: flex;
+}
+
+.profile{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+.profile_desc{
+    /* border: 2px solid blue; */
+    line-height: 0;
+    height: 40%;
+}
+
+.name{
+    font-size: 1.25rem;
+    color: rgb(12, 11, 92); 
+    font-weight: 600;
+}
+
+.position{
+    font-size: 1.15rem;
+    color: rgb(74, 85, 98);
+}
+
+.star_section{
+    /* border: 2px solid green; */
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.star{
+    /* border: 2px solid orchid; */
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.star_section img{
+    width: 40px;
+}
+
+.reviews{
+    /* border: 2px solid black; */
+    margin-top: 40px;
+    font-size: 1.25rem;
+    color: rgb(74, 85, 98);
+    padding-left: auto;
+    width: fit-content;
+    padding-left: 22px;
+}
+

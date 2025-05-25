@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Diwali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- humara browser hota hai jo by default request favicon.ico pe request bhejta hai
+     aur agr usko wh file mil jati hai to wh dhikha deta hai usko dhikha deta hai usko link krne ki jurrort nhi 
+     yhi agr favicon ke naam se dusra hota to request bhejni padti.. -->
+
+    <!-- jo humare website ka phla section usko hero section rakhte hai.. -->
+
+    <!-- div ki by default height bilkul 0 rahti hai agr usme mai koi content nhi hai to uski height bilkul 0 rhegi.. -->
+    <section class="hero-section">
+      <img class="jhalar" src="./images/jhalar.png" alt="jhalar" />
+      <div class="audio-paragraph">
+        <p>
+          Hi,<span id="reciever"></span> <br />
+          You mean the world to me... So this Diwali, I made something for you!
+        </p>
+        <!-- audio tag mai controls attribute dene se sare play pause ke option aa jate hai aur wh screen pe dikhne lgte hai. -->
+        <!-- <div style="background-color:#FBD8A4; padding: 10px; display: inline-block; border-radius: 5px;">
+        </div> -->
+        <!-- vector ko svg mai export krna shi rhta hai -->
+        <div class="audio-container">
+          <img src="./images/Iconsax/music.svg" alt="music-icon" />
+          <!--&nbsp is for space -non bracking space -->
+          <span class="soulful-music"
+            >&nbsp;&nbsp;Soulful Music&nbsp;&nbsp;</span
+          >
+          <img
+            class="playing-icon"
+            src="./images/Iconsax/Vector.svg"
+            alt="playing-icon"
+          />
+          <img
+            class="playing-icon"
+            src="./images/Iconsax/Vector.svg"
+            alt="playing-icon"
+          />
+          <!-- audio automatically play hota rhe jb bhi site reload ho to iske liye autoplay attribute ka use kr skte hai audio tag mai
+           aur kyuki browser ki default setting yh hoti hai sound ka autoplay nhi kr skte to isiliye phle aapko browser ki default value ko change krna hoga..  -->
+          <audio src="./Music/indic-tunes-surbahar.mp3" controls></audio>
+        </div>
+      </div>
+
+      <img
+        class="deepak first-deepak"
+        src="./images/deepak.png"
+        alt="deepak1"
+      />
+      <img
+        class="deepak second-deepak"
+        src="./images/deepak.png"
+        alt="deepak2"
+      />
+    </section>
+    <!-- formatting context ek concept hota hai jiske wajh se margin de rhe the to white line aa rhi thi.. -->
+    <section class="lakshmi-ganesha-section">
+      <div class="horizontal-divider">
+        <div class="horizontal-line"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="horizontal-line"></div>
+      </div>
+        <img class="lakshmi_ganesha_img" src="./images/lakshmi maa and ganesh ji.png" alt="lakshmi_ganesha_img">
+        <h2 class="wish">Wishing You a Blessed and Prosperous Deepawali</h2>
+        <div class="horizontal-divider">
+          <div class="horizontal-line"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="horizontal-line"></div>
+        </div>
+        <div class="white-card-container">
+          <div class="white-card">
+            <p>People say, “Diwali is the festival of lights.” </p>
+            <p>You know what, I can feel the positivity and happiness. My goal is to learn web development and I’m learning everyday, even today!</p>
+          </div>
+          <img class="little-girl" src="./images/little_girl.svg" alt="litte_card">
+        </div>
+        <div class="horizontal-divider">
+          <div class="horizontal-line"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="horizontal-line"></div>
+        </div>
+        <div class="lakshmi-ganesha-card">
+          <img class="lakshmi_ji" src="./images/lakshmi.png" alt="lakshmiji">
+          <img class="ganesh_ji" src="./images/ganesh.png" alt="">
+        </div>
+        <div class="thank-you-text">
+           <p>Happy Diwali and,</p>
+           <h2>Thank You For Everything....</h2>
+        </div>
+        <p class="my-name">Made with 💜 By <span id="sender"></span></p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
